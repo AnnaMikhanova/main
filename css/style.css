@@ -1,6 +1,141 @@
 body{
     margin: 0;
+    padding: 0;
 }
 h1, h2, h3, h4, p{
     margin: 0;
+}
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+.header{
+    position: relative;
+    height: 72px;
+}
+.header-left{
+    display: inline-block;
+    width: 570px;
+    height: 28px;
+    padding: 22px 0;
+}
+.header-logo{
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-logo img:first-child{
+    margin-right: 9px;
+}
+.header-nav{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    font-family: 'Manrope_Bold', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+.header-nav li{
+    display: inline-block;
+    margin-left: 31px;
+}
+.header-nav a{
+    text-decoration: none;
+    color: #18191F;
+}
+.header-right{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 282px;
+    height: 40px;
+    padding: 16px 0;
+}
+.header-right img:first-child{
+    margin-right: 8px;
+}
+
+/*-------------MAIN--------------*/
+.main-left{
+    display: inline-block;
+    width: 540px;
+    vertical-align: top;
+    margin-top: 221px;
+}
+.main-left h1{
+    font-family: 'Manrope-ExtraBold', sans-serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 98px;
+}
+.main-left>p{
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 16px;
+}
+button{
+    background-color: #8C30F5;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 32px;
+}
+.main-left__button p{
+    font-family: 'Manrope-Regular', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin: 16px 41px;
+}
+.main-left__button a{
+    text-decoration: none;
+}
+
+/*------------------------------------------*/
+.main-right{
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin-top: 197px;
+    margin-left: 92px;
+}
+.main-right img{
+    display: inline-block;
+    position: absolute;
+}
+.main-right img:first-child{
+    margin-top: 16px;
+    margin-left: -54px;
+    border-radius: 8px;
+    z-index: 2;
+}
+.main-right img:last-child{
+    bottom: 0;
+    margin-bottom: 16px;
+    margin-left: 190px;
+    border-radius: 8px;
+}
+.bg-img{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 100%;
+    background-color: #F1E4FF;
+    width: 400px;
+    height: 400px;
+}
+.bg-img img{
+    position: absolute;
+    
+}
+.bg-img::before{
+    content: ' ';
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
 }
