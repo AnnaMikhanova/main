@@ -1,84 +1,56 @@
 @font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Bold.eot');
-    src: local('Manrope Bold'), local('Manrope-Bold'),
-        url('Manrope-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Bold.woff2') format('woff2'),
-        url('Manrope-Bold.woff') format('woff'),
-        url('Manrope-Bold.ttf') format('truetype');
+    font-family: 'Inter-Regular';
+    src: url('Inter-Regular.eot');
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Inter-Regular.woff2') format('woff2'),
+        url('Inter-Regular.woff') format('woff'),
+        url('Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('Inter-SemiBold.eot');
+    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+        url('Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Inter-SemiBold.woff2') format('woff2'),
+        url('Inter-SemiBold.woff') format('woff'),
+        url('Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('Inter-Bold.eot');
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Inter-Bold.woff2') format('woff2'),
+        url('Inter-Bold.woff') format('woff'),
+        url('Inter-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Semibold.eot');
-    src: local('Manrope Semibold'), local('Manrope-Semibold'),
-        url('Manrope-Semibold.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Semibold.woff2') format('woff2'),
-        url('Manrope-Semibold.woff') format('woff'),
-        url('Manrope-Semibold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Regular.eot');
-    src: local('Manrope Regular'), local('Manrope-Regular'),
-        url('Manrope-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Regular.woff2') format('woff2'),
-        url('Manrope-Regular.woff') format('woff'),
-        url('Manrope-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Light.eot');
-    src: local('Manrope Light'), local('Manrope-Light'),
-        url('Manrope-Light.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Light.woff2') format('woff2'),
-        url('Manrope-Light.woff') format('woff'),
-        url('Manrope-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Thin.eot');
-    src: local('Manrope Thin'), local('Manrope-Thin'),
-        url('Manrope-Thin.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Thin.woff2') format('woff2'),
-        url('Manrope-Thin.woff') format('woff'),
-        url('Manrope-Thin.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-Medium.eot');
-    src: local('Manrope Medium'), local('Manrope-Medium'),
-        url('Manrope-Medium.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-Medium.woff2') format('woff2'),
-        url('Manrope-Medium.woff') format('woff'),
-        url('Manrope-Medium.ttf') format('truetype');
+    font-family: 'Inter-Medium';
+    src: url('Inter-Medium.eot');
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Inter-Medium.woff2') format('woff2'),
+        url('Inter-Medium.woff') format('woff'),
+        url('Inter-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Manrope';
-    src: url('Manrope-ExtraBold.eot');
-    src: local('Manrope ExtraBold'), local('Manrope-ExtraBold'),
-        url('Manrope-ExtraBold.eot?#iefix') format('embedded-opentype'),
-        url('Manrope-ExtraBold.woff2') format('woff2'),
-        url('Manrope-ExtraBold.woff') format('woff'),
-        url('Manrope-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.eot');
+    src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+        url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-SemiBold.woff') format('woff'),
+        url('Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
-
