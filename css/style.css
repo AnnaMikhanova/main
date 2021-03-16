@@ -1,6 +1,584 @@
 body{
     margin: 0;
+    padding: 0;
 }
-h1, h2, h3, h4, p{
+p, h1, h2, h3, h4, input, a{
     margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #FAFBFC;
+}
+nav{
+    height: 80px;
+}
+header{
+box-shadow: 0px 10px 40px 0px rgb(89,120,150,0.06);
+background-color: white;
+}
+header nav{
+    display: flex;
+}
+.header-logo img{
+    margin: 17px 44px 17px 40px;
+}
+.header-logo{
+    border-right: 1px solid #F4F4F4;
+}
+.header-menu{
+    display: flex;
+    width: 450px;
+    margin-left: 14px;
+    margin-right: 20px;
+}
+.header-menu a{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 100%;
+}
+.header-menu a img{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 13px;
+}
+.header-menu a:nth-child(4){
+    position: relative;
+}
+.header-menu a:nth-child(4) img:last-child{
+    position: absolute;
+    top: 9px;
+    left: 47px;
+    width: 16px;
+    height: 16px;
+}
+.header-menu__last a{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gotham Pro Medium', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 100%;
+    border-right: 1px solid #F4F4F4;
+}
+.header-search{
+    position: relative;
+    width: 367px;
+    border: 0;
+    border-left: 1px solid #F4F4F4;
+    border-right: 1px solid #F4F4F4;
+}
+.header-search img{
+    position: absolute;
+    top: 28px;
+    left: 30px;
+    width: 24px;
+    height: 24px;
+}
+.header-search input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding-left: 74px;
+    color: #CECECE;
+}
+::-webkit-input-placeholder{
+    font-family: 'Gotham Pro Light', sans-serif;
+    font-size: 16px;
+    line-height: 15px;
+    color: #CECECE;
+}
+.header-user{
+    width: 330px;
+    display: flex;
+    border-right: 1px solid #F4F4F4;
+}
+.header-user img{
+    width: 42px;
+    height: 42px;
+    margin: 18px 15px 20px 30px;
+}
+.header-user__info{
+    margin-top: 24px;
+    margin-bottom: 23px;
+}
+.header-user__info p:first-child{
+    font-family: 'Gotham Pro Medium',sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+}
+#youspan{
+    margin-left: 10px;
+    font-family: 'Gotham Pro',sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    color: rgb(24,24,24,0.2);
+}
+.header-user__count{
+    font-family: 'Gotham Pro',sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    color: #747474;
+    margin-top: 11px;
+}
+.header-user__count span{
+    font-family: 'Gotham Pro Medium',sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    color: #02B033;
+    margin-left: 4px;
+}
+.header-user__count span img{
+    width: 11px; 
+    height: 11px;
+    /*должно быть 5х5, но кажется есть какая то проблема
+    со шрифтом, поэтому подогнала*/
+    margin: 0;
+}
+/*------HOVER и FOCUS эффекты для header'а--------*/
+.header-menu a:hover{
+    box-sizing: border-box;
+    color: #0275B1;
+    border-bottom: 2px solid #0275B1;
+    padding-top: 2px;
+}
+.header-menu__last a:hover{
+    box-sizing: border-box;
+    color: #0275B1;
+    border-bottom: 2px solid #0275B1;
+    padding-top: 2px;    
+}
+.header-search input:focus{
+    outline: none;
+    box-shadow: 0px 10px 40px 0px rgb(89,120,150,0.06);
+}
+/*-----------/HEADER-------------------*/
+aside{
+    width: 290px;
+    margin-left: 170px;
+    margin-top: 39px;
+}
+.aside-menu{
+    display: flex;
+    flex-direction: column;
+}
+.aside-menu a{
+    display: flex;
+    align-items: center;
+    font-family: 'Gotham Pro',sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #181818;
+    border-bottom: 1px solid #F4F4F4;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    box-sizing: border-box;
+    position: relative;
+}
+.aside-menu a:first-child{
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.aside-menu a:last-child{
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.aside-menu a>img{
+    width: 16px;
+    height: 16px;
+    margin-left: 30px;
+    margin-right: 11px;
+}
+.aside-menu a span{
+    text-align: right;
+    font-weight: bolder;
+    position: absolute;
+    right: 30px;
+}
+.menu-invitations{
+    color: #ED8F03;
+}
+.menu-invitations img{
+    width: 9px;
+    height: 9px;
+    margin-left: 8px;
+}
+/*------HOVER и FOCUS эффекты для aside'а--------*/
+.aside-menu a:hover{
+    border-left: 10px solid #0275B1;
+    color: #181818;
+    opacity: 0.6;
+}
+/*---------/ASIDE---------------------*/
+main{
+    width: 850px;
+    margin-left: 524px;
+    background-color: #FAFBFC;
+}
+.upper-section__pages{
+    display: flex;
+    height: 50px;
+    align-items: flex-end;
+}
+.upper-section__pages a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #181818;
+    text-align: center;
+    border: 1px solid #E7E7E7;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    height: 40px;
+    width: 250px;
+}
+.upper-section__empty{
+    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
+    border-top: 2px solid #E7E7E7;
+}
+.upper-section__empty p{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0 #181818;
+    margin: 0 19px -2px 19px;
+}
+.upper-section__empty span{
+    color: #0275B1;
+    text-shadow: 1px 1px 0 #0275B1;
+    font-weight: bolder;
+}
+.empty{
+    border-top: 2px solid #E7E7E7;
+    width: 300px;
+    margin-bottom: 3px;
+}
+.empty:first-child{
+    margin-left: -38px;
+}
+.empty:last-child{
+    margin-right: -38px;
+}
+/*-----------------------------------------------------------*/
+.present-connections__item{
+    position: relative;
+    display: flex;
+    width: 850px;
+    align-items: center;
+    border-radius: 4px;
+}
+.present-connections__item:first-child{
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+.present-connections__item img{
+    width: 52px;
+    height: 52px;
+    margin: 20px 15px 23px 30px;
+}
+.item__user-info p:first-child{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.item__user-info p:nth-child(2){
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    margin-bottom: 3px;
+}
+.item__user-info p:last-child{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: left;
+    color: #0275B1;
+}
+.item__user-info{
+    display: flex;
+    flex-direction: column;
+    width: 115px;
+}
+.present-connections__item>p{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    width: 300px;
+    padding-left: 15px;
+    border-left: 2px solid #0275B1;
+    margin-left: 50px;
+    color: rgb(24,24,24,0.6);
+}
+.button{
+    width: 91px;
+    height: 32px;
+    border-radius: 4px;
+    border: 0;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.button-accept, .button-decline{
+    position: absolute;
+}
+.button-decline{
+    right: 31px;
+}
+.button-accept{
+    right: 137px;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    color: white;
+}
+.button-decline{
+    color: #B7B7B7;
+    border: 1px solid #B7B7B7;
+}
+/*------HOVER и FOCUS эффекты для section--------*/
+.upper-section__pages a:hover{
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    width: 250px;
+    color: white;
+    border-radius: 4px 4px 0px 0px;
+}
+.button-accept:hover{
+    cursor: pointer;
+    background: linear-gradient(180deg, #0E6795 0%, #016193 100%);
+}
+.button-accept:focus{
+    outline: none;
+    background: linear-gradient(180deg, #0E6795 0%, #016193 100%);
+}
+.button-decline:hover{
+    cursor: pointer;
+    background: #e2e2e2;
+}
+.button-decline:focus{
+    outline: none;
+    background: #e2e2e2;
+}
+/*--------/section (первая)-----------*/
+
+.recent-connections{
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    margin-bottom: 40px;
+}
+.connections__empty{
+    width: 310px;
+    border-top: 1px solid #E7E7E7;
+}
+.recent-connections p{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0 #181818;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+}
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 46px;
+}
+.recent-connections__item{
+    display: flex;
+    position: relative;
+    width: 420px;
+    border-radius: 4px;
+}
+.recent-connections__item:nth-child(2n+1){
+    margin-right: 10px;
+}
+.recent-connections__item img{
+    margin: 20px 15px 23px 30px;
+}
+.recent-connections__item span{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: right;
+    color: rgb(24,24,24,0.3);
+}
+.recent-connections__item:first-child,
+.recent-connections__item:nth-child(2){
+    margin-bottom: 10px;
+}
+.recent-item__user-info{
+    margin-top: 32px;
+}
+.recent-item__user-info p:first-child{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    line-height: 13px;
+    font-weight: bolder;
+    color: #181818;
+    margin-bottom: 5px;
+}
+.recent-item__user-info p:last-child{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+    color: #181818;
+}
+/*--------/section (вторая)-----------*/
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #F7F9FB;
+}
+.footer-logo{
+    margin: 30px 69px 106px 130px;
+}
+.footer-logo p{
+    margin-top: 12px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: #181818;
+    font-weight: bolder;
+}
+.footer-logo p span{
+    color: #0275B1;
+}
+.footer-menu__columns{
+    display: flex;
+    justify-content: space-between;
+    width: 485px;
+    margin-right: 65px;
+}
+.footer-column__name{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    font-weight: bolder;
+    margin-top: 35px;
+}
+.columns__item{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    margin-top: 30px;
+    margin-bottom: 53px;
+}
+.columns__item p{
+    margin-bottom: 11px;
+}
+.footer-settings{
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+.footer-button{
+    width: 170px;
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: left;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-radius: 4px;
+}
+.footer-button img{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+}
+.button-question{
+    margin-top: 23px;
+    margin-bottom: 10px;
+    border: 0;
+    background-color: #0275B1;
+    color: white;
+}
+.button-settings{
+    border: 1px solid #0275B1;
+    background-color: #F7F9FB;
+    color: #0275B1;
+}
+/*------HOVER и FOCUS эффекты для FOOTER'a--------*/
+.button-question:focus,
+.button-settings:focus{
+    cursor: pointer;
+    outline: none;
+}
+.button-question:hover{
+    background-color: #0E6795;
+    cursor: pointer;
+}
+.button-settings:hover{
+    background-color: #F0F2F3;
+    cursor: pointer;
+}
+/*--------/footer-settings-----------*/
+select{
+    width: 270px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.option{
+    font-family: 'Gotham Pro', sans-serif;
+    font-size: 12px;
+    line-height: 11px;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-top: 23px;
+    appearance: none;
+    background-image: url(/img/footer-select.svg);
+    background-repeat: no-repeat;
+    background-position: right 10px top 14px;
+}
+/*------HOVER и FOCUS эффекты для FOOTER'a--------*/
+.option:focus{
+    outline: none;
 }

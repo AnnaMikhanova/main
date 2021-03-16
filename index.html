@@ -4,11 +4,214 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />  
+    <title>Network</title>
 </head>
 <body>
+
+<div class="container">
+    <header>
+        <nav>
+
+            <a href="#" class="header-logo"><img src="/img/header-logo.svg" alt="LinkedIn Logo"></a>
+
+        <div class="header-menu">
+            <a href="#"><img src="/img/header-feed.svg" alt="feed">feed</a>
+            <a href="#"><img src="/img/header-network.svg" alt="network">network</a>
+            <a href="#"><img src="/img/header-jobs.svg" alt="jobs">jobs</a>
+            <a href="#"><img src="/img/header-chat.svg" alt="chat">
+                <img src="/img/header-chat__count.svg" alt="number of messages">chat</a>
+            <a href="#"><img src="/img/header-notices.svg" alt="notices">notices</a>
+        </div>
+            <!--/header-menu-->
+
+        <div class="header-search">
+            <img src="/img/header-search.svg" alt="search">
+            <input type="search" placeholder="Search">
+        </div>
+            <!--/header-search-->
+
+        <div class="header-user">
+            <img src="/img/header-user.svg" alt="User Photo">
+            <div class="header-user__info">
+            <p>D. Kargaev <span id="youspan">you</span></p>
+            <p class="header-user__count">367 views today<span>+32 <img src="/img/header-arrow.png"></span></p>
+            </div>
+            <!--/header-user__info-->
+        </div>
+        <!--/header-user-->
+
+        <div class="header-menu__last">
+            <a href="#"><img src="/img/header-other.svg" alt="other">other</a>
+        </div>
+        <!--/header-menu-->
+
+        </nav>
+    </header>
     
+    <aside>
+        <nav class="aside-menu">
+            <a href="#"><img src="/img/aside-connection.svg" alt="connection">connection<span>1,038</span></a>
+            <a href="#"><img src="/img/aside-invitations.svg" alt="invitations">invitations<span class="menu-invitations">2<img src="/img/header-chat__count.svg"></span></a>
+            <a href="#"><img src="/img/aside-teammates.svg" alt="teammates">teammates</a>
+            <a href="#"><img src="/img/aside-groups.svg" alt="groups">groups<span>6</span></a>
+            <a href="#"><img src="/img/aside-pages.svg" alt="pages">pages<span>28</span></a>
+            <a href="#"><img src="/img/aside-hashtags.svg" alt="hashtags">hashtags<span>8</span></a>
+        </nav>
+    </aside>
+
+    <main>
+        <section class="upper-section">
+            <div class="upper-section__pages">
+            <a href="#">received</a>
+            <a href="#">sent</a>
+            </div>
+            <!--/upper-section__pages-->
+            <div class="upper-section__empty">
+                <div class="empty"></div>
+                <p>you have <span>2 new connections</span></p>
+                <div class="empty"></div>
+                <!--/empty-->
+            </div>
+            <!--/upper-section__empty-->
+
+            <div class="present-connections">
+                <div class="present-connections__item">
+                    <img src="/img/BrandonW.svg" alt="User Photo">
+                    <div class="item__user-info">
+                        <p>Brandon Wilson</p>
+                        <p>Senior UX designer</p>
+                        <p>623 connections</p>
+                    </div>
+                    <!--/item__user-info-->
+                    <p>Hey, I saw your works. I like it! 
+                        Can we do something<br> together? 
+                        Or maybe you have project for UX at the<br> moment?</p>
+                        <button class="button button-accept">accept</button>
+                        <button class="button button-decline">decline</button>
+                </div>
+                <!--/present-connections__item-->
+
+                <div class="present-connections__item">
+                    <img src="/img/TheresaS.svg" alt="User Photo">
+                    <div class="item__user-info">
+                        <p>Theresa Steward</p>
+                        <p>iOS developer</p>
+                        <p>481 connections</p>
+                    </div>
+                    <!--/item__user-info-->
+                    <button class="button button-accept">accept</button>
+                    <button class="button button-decline">decline</button>
+                </div>
+               <!--/present-connections__item-->
+            </div>
+           <!--/present-connections--> 
+        </section>
+
+        <section class="lower-section">
+            <div class="recent-connections">
+                <div class="connections__empty"></div>
+                <p>recent connections</p>
+                <div class="connections__empty"></div>
+            </div>
+            <!--/recent-connections-->
+
+            <div class="items-container">
+                <div class="recent-connections__item">
+                <img src="/img/AudreyA.svg" alt="User Photo">
+                <div class="recent-item__user-info">
+                <p>Audrey Alexander</p>
+                <p>Team lead at Google</p>
+                </div>
+                <!--/recent-item__user-info-->
+                <span>Yesterday, 14:30</span>
+                </div>
+                <!--/recent-connections__item-->
+                <div class="recent-connections__item">
+                <img src="/img/KyleF.svg" alt="User Photo">
+                <div class="recent-item__user-info">
+                <p>Kyle Fisher</p>
+                <p>Product designer at Commandor Corp</p>
+                </div>
+                <!--/recent-item__user-info-->
+                <span>Yesterday, 12:03</span>
+                </div>
+                <!--/recent-connections__item-->
+                <div class="recent-connections__item">
+                <img src="/img/DarleneB.svg" alt="User Photo">
+                <div class="recent-item__user-info">
+                <p>Darlene Black</p>
+                <p>HR-manager, 10 000 connections</p>
+                </div>
+                <!--/recent-item__user-info-->
+                <span>26 aug, monday</span>
+                </div>
+                <!--/recent-connections__item-->
+                <div class="recent-connections__item">
+                <img src="/img/EduardoR.svg" alt="User Photo">
+                <div class="recent-item__user-info">
+                <p>Eduardo Russell</p>
+                <p>Full stack developer at Yandex</p>
+                </div>
+                <!--/recent-item__user-info-->
+                <span>25 aug, sunday</span>
+                </div>
+                <!--/recent-connections__item-->
+            </div>
+            <!--/items-container-->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+        <img src="/img/header-logo.svg" alt="LinkedIn Logo">
+        <p>Linked<span>In</span></p>
+        </div>
+        <!--/footer-logo-->
+        <nav class="footer-menu">
+            <p class="footer-column__name">Navigation</p>
+
+            <div class="footer-menu__columns">
+            <div class="columns__item">
+                <p>About</p>
+                <p>Careers</p>
+                <p>Advertising</p>
+                <p>Small Business</p>
+            </div>
+            <div class="columns__item">
+                <p>Talent Solutions</p>
+                <p>Marketing Solutions</p>
+                <p>Sales Solutions</p>
+                <p>Safety Center</p>
+            </div>
+            <div class="columns__item">
+                <p>Community Guidelines</p>
+                <p>Privacy & Terms</p>
+                <p>Mobile App</p>
+            </div>
+            </div>
+            <!--/footer-menu__columns-->
+        </nav>
+        <!--/footer-menu-->
+        <div class="footer-settings">
+            <p class="footer-column__name">Fast access</p>
+            <button class="footer-button button-question">questions ?<img src="/img/footer-questions.svg" alt="logo"></button>
+            <button class="footer-button button-settings">settings<img src="/img/footer-settings.svg" alt="logo"></button>
+        </div>
+        <!--/footer-settings-->
+        <div class="footer-select">
+        <p class="footer-column__name">Language</p>
+        <select class="option">
+            <option selected>English</optionvalue=>
+            <option>Russian</option>
+        </select>
+        </div>
+        <!--/footer-select-->
+    </footer>
+</div>
+<!--/container-->
 </body>
 </html>
+<!---->
