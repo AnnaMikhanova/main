@@ -5,43 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/fonts.css" />
     <link rel="stylesheet" href="/css/normalize.css" />  
-    <title>Trafalgar</title>
+    <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
+    <!-- Add the new slick-theme.css if you want the default styling-->
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
+    <title>Slick Slider</title>
 </head>
 <body>
+  
     <div class="container">
-    <header>
-        <div class="header-menu">
-        <img src="/img/header-logo.svg" alt="Trafalgar Logo" class="header-menu__logo">
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Find a doctor</a>
-            <a href="#">Apps</a>
-            <a href="#">Testimonials</a>
-            <a href="#">About us</a>
-        </nav>
-        </div>
-        <!--/header-menu-->
-
-        <img src="/img/square-dots.svg" alt="" class="header-decoration">
-
-        <div class="header-main">
-            <div class="header-main__info">
-            <h2>Virtual healthcare for you</h2>
-            <p>Trafalgar provides progressive, and affordable 
-                healthcare, accessible on mobile and online<br> for everyone</p>
-            <a href="#">Consult today</a>
+        <div class="slick-slider">
+            <div class="first-slide">
+            <h2>What our customer are saying</h2>
+            <div class="empty"></div>
+            <div class="customer-info">
+                <img src="/img/customer-photo.png">
+                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
+                <p class="customer-review">“Our dedicated patient engagement app and <br>
+                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
+                    or administrative hassle) and securely”</p>
             </div>
-            <img src="/img/main-picture.svg" alt="">
-            <!--/header-main__info-->
-        </div>
-        <!--/header-main-->
-    </header>
+            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
+            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            </div>
 
+            <div class="first-slide">
+            <h2>What our customer are saying</h2>
+            <div class="empty"></div>
+            <div class="customer-info">
+                <img src="/img/customer-photo.png">
+                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
+                <p class="customer-review">“Our dedicated patient engagement app and <br>
+                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
+                    or administrative hassle) and securely”</p>
+            </div>
+            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
+            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            </div>
+            
+            <div class="first-slide">
+            <h2>What our customer are saying</h2>
+            <div class="empty"></div>
+            <div class="customer-info">
+                <img src="/img/customer-photo.png">
+                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
+                <p class="customer-review">“Our dedicated patient engagement app and <br>
+                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
+                    or administrative hassle) and securely”</p>
+            </div>
+            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
+            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            </div>
+            
+        </div>
     </div>
-    <!--/CONTAINER-->
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="/js/slick.min.js"></script>
+
+        <script>
+        
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:true,
+            dotsClass: 'my-dots',
+            arrows:true,
+            prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i><img src="/slickimg/arrow-left-active.png" class="myprevarrow"></button>',
+            nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="/slickimg/arrow-right-active.png" class="myprevarrow"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+    	});
+        </script>
+
 </body>
 </html>
-<!---->
