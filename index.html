@@ -4,82 +4,201 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/normalize.css" />  
-    <link rel="stylesheet" type="text/css" href="/css/slick.css"/>
-    <!-- Add the new slick-theme.css if you want the default styling-->
-    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css"/>
-    <title>Slick Slider</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />  
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/slick-theme.css"/>
+    <link rel="stylesheet" href="./css/slider.css" /> 
+    <link rel="stylesheet" href="./css/media.css" />  
+    <title>Мебель</title>
 </head>
 <body>
-  
+
     <div class="container">
-        <div class="slick-slider">
-            <div class="first-slide">
-            <h2>What our customer are saying</h2>
-            <div class="empty"></div>
-            <div class="customer-info">
-                <img src="/img/customer-photo.png">
-                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
-                <p class="customer-review">“Our dedicated patient engagement app and <br>
-                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
-                    or administrative hassle) and securely”</p>
+    <header>
+        <nav class="header-menu"> <!--header-menu (навигация в хидере)-->
+            <a href="#" class="header-menu__logo"><img  src="./img/company-logo.svg" alt="Company Logo"></a>
+
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">мебель</a></li>
+                  <li><a class="menu__item" href="#">освещение</a></li>
+                  <li><a class="menu__item" href="#">текстиль</a></li>
+                </ul>
+            </div> <!--/hamburger-menu-->
+            <a href="#" class="header-menu__search"><img src="./img/header-search.svg" alt="Search"></a>
+            <a href="#" class="header-menu__shopbag"><img src="./img/header-shopbag.svg" alt="Shopbag"></a>
+        </nav> 
+        <div class="header-item">
+        <div class="header-item__info"> <!--header-item__info (описание товара)-->
+            <h1>дизайнерская <br>мебель</h1>
+            <p>Кресло "Антиква"</p>
+            <p>$380 <span>$240</span></p>
+            <a href="#">купить</a>
+        </div> 
+        <div class="header-item__picture"> <!--header-item__picture (фотография товара)-->
+            <div><img src="./img/header-item__picture.png" alt="Product Picture"></div>
+            <div><img src="./img/header-item__picture.png" alt="Product Picture"></div>
+            <div><img src="./img/header-item__picture.png" alt="Product Picture"></div>
+            <div><img src="./img/header-item__picture.png" alt="Product Picture"></div>
+            
+        </div> <!--/header-item__picture-->
+        <div class="header-item__empty"></div> <!--empty block (absolute)-->
+        </div> <!--/header-item-->
+    </header>
+
+    <main>
+        <section class="new-items"> <!--new-items (секция с новинками)-->
+            <div class="new-items__left">
+                <div class="items__left-first"><h2>новинки</h2>
+                    <div class="new-items__left-empty"></div>
+                </div>
+                <div class="items__left-general"><img src="./img/new-items__left-chair.png" alt=""><p>Стул "Смеркается"</p><span>$280</span></div>
+                <div class="items__left-general"><img src="./img/new-items__left-chandelier.png" alt=""><p>Люстра "Облако"</p><span>$250</span></div>
+                <div class="items__left-general"><img src="./img/new-items__left-table.png" alt=""><p>Стол "Крем-брюле"</p><span>$320</span></div>
             </div>
-            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
-            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            <div class="new-items__right">
+                <img src="./img/new-items__right-chair.png" alt=""><p>Стул офисный "Белый шоколад"</p><span>$120</span>
+            </div>
+        </section> 
+
+        <section class="customer-reviews"> <!--customer reviews (секция с отзывами клиентов)-->
+           <div class="slick-slider">
+                <div class="slick-slider__first">
+                    <img src="./slickSliderImg/customer-reviews__photo.png" alt="">
+                    <h3>Елена Новикова</h3>
+                    <p>студентка</p>
+                    <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                    заказывала в конце 2016 года. Держится великолепно. Спасибо, большое 
+                    сотрудникам этого чудесного магазина.»</p>
+                </div>
+
+                <div class="slick-slider__first">
+                    <img src="./slickSliderImg/customer-reviews__photo.png" alt="">
+                    <h3>Елена Новикова</h3>
+                    <p>студентка</p>
+                    <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                    заказывала в конце 2016 года. Держится великолепно. Спасибо, большое 
+                    сотрудникам этого чудесного магазина.»</p>
+                </div>
+
+                <div class="slick-slider__first">
+                    <img src="./slickSliderImg/customer-reviews__photo.png" alt="">
+                    <h3>Елена Новикова</h3>
+                    <p>студентка</p>
+                    <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                    заказывала в конце 2016 года. Держится великолепно. Спасибо, большое 
+                    сотрудникам этого чудесного магазина.»</p>
+                </div>
+
+                <div class="slick-slider__first">
+                    <img src="./slickSliderImg/customer-reviews__photo.png" alt="">
+                    <h3>Елена Новикова</h3>
+                    <p>студентка</p>
+                    <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», 
+                    заказывала в конце 2016 года. Держится великолепно. Спасибо, большое 
+                    сотрудникам этого чудесного магазина.»</p>
+                </div>
+            </div>
+        </section> 
+
+        <section class="sale-item"> <!--sale-item (секция распродажи)-->
+            <div class="sale-item__heading">
+                <h2>последний шанс</h2>
+                <div class="item__heading-empty"></div>
+                <nav class="sale-item__menu">
+                    <a href="#">Стулья</a>
+                    <a href="#">Диваны</a>
+                    <a href="#">Кресла</a>
+                </nav>
             </div>
 
-            <div class="first-slide">
-            <h2>What our customer are saying</h2>
-            <div class="empty"></div>
-            <div class="customer-info">
-                <img src="/img/customer-photo.png">
-                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
-                <p class="customer-review">“Our dedicated patient engagement app and <br>
-                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
-                    or administrative hassle) and securely”</p>
+            <div class="sale-item__empty"></div>
+
+            <div class="sale-item__main">
+            <div class="sale-item__product">
+                <p>Стул "Карамель"</p><span>$195<span class="product-grey">$245</span></span>
+                <img src="./img/sale-item__product-caramel.png" alt="">
+                <a href="#">Купить</a>
             </div>
-            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
-            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            <div class="sale-item__product">
+                <p>Стул "Облако"</p><span>$200<span class="product-grey">$250</span></span>
+                <img src="./img/sale-item__product-cloud.png" alt="">
+                <a href="#">Купить</a>
             </div>
-            
-            <div class="first-slide">
-            <h2>What our customer are saying</h2>
-            <div class="empty"></div>
-            <div class="customer-info">
-                <img src="/img/customer-photo.png">
-                <p class="customer-name">Edward Newgate<span>Founder Circle</span></p>
-                <p class="customer-review">“Our dedicated patient engagement app and <br>
-                    web portal allow you to access information <br> instantaneously (no tedeous form, long calls, <br>
-                    or administrative hassle) and securely”</p>
+            <div class="sale-item__product">
+                <p>Стул "Сова"</p><span>$240<span class="product-grey">$260</span></span>
+                <img src="./img/sale-item__product-owl.png" alt="">
+                <a href="#">Купить</a>
             </div>
-            <img class="dots-upper" src="/slickimg/upper-group.svg" alt="">
-            <img class="dots-lower" src="/slickimg/lower-group.svg" alt="">
+            <div class="sale-item__product">
+                <p>Стул "Мая"</p><span>$280<span class="product-grey">$330</span></span>
+                <img src="./img/sale-item__product-maya.png" alt="">
+                <a href="#">Купить</a>
             </div>
-            
+            <div class="sale-item__product">
+                <p>Стул "Месси"</p><span>$280<span class="product-grey">$305</span></span>
+                <img src="./img/sale-item__product-messy.png" alt="">
+                <a href="#">Купить</a>
+            </div>
+            </div>
+
+        </section> 
+    </main>
+
+    <footer>
+        <div class="footer-menu">
+        <img src="./img/company-logo.svg" alt="">
+        <nav> <!--footer-menu (навигация в футере)-->
+            <a href="#">доставка</a>
+            <a href="#">оплата</a>
+            <a href="#">контакты</a>
+            <a href="#">гарантии</a>
+        </nav> 
         </div>
-    </div>
+        <div class="customer-feedback">  <!--customer-feedback (форма обратной связи для клиентов)-->
+            <p><img src="./img/customer-feedback__phone.svg" alt="">+7(495) 205-28-14</p>
+            <p><img src="./img/customer-feedback__email.svg" alt="">callium@gmail.com</p>
+        </div> 
+        <div class="footer-empty"></div>
+        <span>© 2018 «Callium» — Сайт по продаже дизайнерской мебели. Все права защищены.</span>
+    </footer>
 
+    </div> <!--/container-->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
 
-        <script>
-        
-        $('.slick-slider').slick({
-            infinite: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots:true,
-            dotsClass: 'my-dots',
-            arrows:true,
-            prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i><img src="/slickimg/arrow-left-active.png" class="myprevarrow"></button>',
-            nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="/slickimg/arrow-right-active.png" class="myprevarrow"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
-    	});
-        </script>
+    <script>
+    
+    $('.slick-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:true,
+        dotsClass: 'my-dots',
+        arrows:true,
+        prevArrow: '<button id="prev" type="button" class="btn btn-juliet"><i class="fa fa-chevron-left" aria-hidden="true"></i><img src="./slickSliderImg/customer-reviews__larrow.svg" class="myprevarrow"></button>',
+        nextArrow: '<button id="next" type="button" class="btn btn-juliet"><img src="./slickSliderImg/customer-reviews__rarrow.svg" class="myprevarrow"> <i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+    });
 
+    $('.header-item__picture').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots:true,
+        dotsClass: 'my-dots2',
+        arrows:false
+       });
+    </script>
 </body>
 </html>
+<!---->

@@ -1,35 +1,116 @@
+/*-------------AVENIR NEXT---------------------------*/
+
 @font-face {
-    font-family: 'Mulish-Light';
-    src: url('Mulish-Light.eot');
-    src: local('Mulish Light'), local('Mulish-Light'),
-        url('Mulish-Light.eot?#iefix') format('embedded-opentype'),
-        url('Mulish-Light.woff2') format('woff2'),
-        url('Mulish-Light.woff') format('woff'),
-        url('Mulish-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
+	font-family: 'Avenir Next Cyr-Demi';
+	src: url('AvenirNextCyr-Demi.eot');
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Demi.woff') format('woff'),
+		url('AvenirNextCyr-Demi.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Mulish-Bold';
-    src: url('Mulish-Bold.eot');
-    src: local('Mulish Bold'), local('Mulish-Bold'),
-        url('Mulish-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Mulish-Bold.woff2') format('woff2'),
-        url('Mulish-Bold.woff') format('woff'),
-        url('Mulish-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+	font-family: 'Avenir Next Cyr-Medium';
+	src: url('AvenirNextCyr-Medium.eot');
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Medium.woff') format('woff'),
+		url('AvenirNextCyr-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Avenir Next Cyr-Regular';
+	src: url('AvenirNextCyr-Regular.eot');
+	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+		url('AvenirNextCyr-Regular.eot?#iefix') format('embedded-opentype'),
+		url('AvenirNextCyr-Regular.woff') format('woff'),
+		url('AvenirNextCyr-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/*--------------------------OPEN SANS---------------------------------*/
+
+@font-face {
+	font-family: 'Open Sans-Bold';
+	src: url('OpenSans-Bold.eot');
+	src: local('Open Sans Bold'), local('OpenSans-Bold'),
+		url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Bold.woff') format('woff'),
+		url('OpenSans-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Mulish-Regular';
-    src: url('Mulish-Regular.eot');
-    src: local('Mulish Regular'), local('Mulish-Regular'),
-        url('Mulish-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Mulish-Regular.woff2') format('woff2'),
-        url('Mulish-Regular.woff') format('woff'),
-        url('Mulish-Regular.ttf') format('truetype');
+	font-family: 'Open Sans-Italic';
+	src: url('OpenSans-Italic.eot');
+	src: local('Open Sans Italic'), local('OpenSans-Italic'),
+		url('OpenSans-Italic.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Italic.woff') format('woff'),
+		url('OpenSans-Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans-Regular';
+	src: url('OpenSans-Regular.eot');
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		url('OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Regular.woff') format('woff'),
+		url('OpenSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans-SemiBold';
+	src: url('OpenSans-SemiBold.eot');
+	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+		url('OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-SemiBold.woff') format('woff'),
+		url('OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+/*----------------------PLAYFAIR DISPLAY----------------------------*/
+
+@font-face {
+	font-family: 'Playfair Display-Regular';
+	src: url('PlayfairDisplay-Regular.eot');
+	src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
+		url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('PlayfairDisplay-Regular.woff') format('woff'),
+		url('PlayfairDisplay-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display-Bold';
+	src: url('PlayfairDisplay-Bold.eot');
+	src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+		url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('PlayfairDisplay-Bold.woff') format('woff'),
+		url('PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/*----------------------ROBOTO----------------------------*/
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Roboto-Regular.woff') format('woff'),
+        url('Roboto-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

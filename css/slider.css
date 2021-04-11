@@ -1,0 +1,183 @@
+/*=======Кастомизация слайдера для блока отзывов клиентов=======*/
+.customer-reviews{
+    display: inline-flex;
+    position: relative;
+}
+.slick-slider{
+    display: inline-block;
+}
+.slick-slider__first{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    outline: none;
+}
+.slick-slider__first img{
+    margin: 0 auto;
+}
+.slick-slider__first h3{
+    font-family: 'Avenir Next Cyr-Demi', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    margin-top: 25px;
+    color:  #444348;
+}
+.slick-slider__first p{
+    font-family: 'Open Sans-Regular', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    color:  #444348;
+}
+.slick-slider__first p:nth-child(4){
+    font-family: 'Open Sans-Regular', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+button{
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    box-shadow: 0px 0px 20px 0px rgb(0,0,0,0.1);
+    background-color: white;
+}
+#prev{
+    position: absolute;
+}
+#next{
+    position: absolute;
+}
+
+.my-dots{
+    list-style: none;
+    text-align: center;
+    position: absolute;
+}
+.my-dots li{
+    display: inline-flex;
+}
+.my-dots li button:before{
+    content: url('../slickSliderImg/dot-unactive.svg');
+    
+}
+.my-dots li button{
+    color: transparent;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 0;
+    outline: none;
+    box-shadow: 0 0 0 0 rgb(0,0,0,0.1);
+}
+/*-------HOVER эффекты для стрелок-------*/
+#next:hover, 
+#prev:hover{
+    cursor: pointer;
+    background-color: #F7F8F8;
+}
+/*-------HOVER эффекты для точек слайдера-------*/
+.my-dots li button:hover:before{
+    content: url('../slickSliderImg/dot-active.svg');
+    cursor: pointer;
+}
+.my-dots li button:focus:before,
+.my-dots li button:active:before{
+    content: url('../slickSliderImg/dot-active.svg');
+}
+.my-dots li.slick-active button:before {
+    content: url('../slickSliderImg/dot-active.svg');
+    opacity: 0.75;
+}
+
+/*=======Кастомизация слайдера для блока header'а=======*/
+.header-item__picture{
+    position: absolute;
+    z-index: 1;
+    outline: none;
+    border: 0;
+    border-right: 1px solid #FCEAE8;
+}
+.header-item__picture div{
+    outline: none;
+    border: 0;
+    height: 100%;
+}
+.my-dots2{
+    list-style: none;
+    text-align: center;
+    position: absolute;
+}
+.my-dots2 li{
+    display: flex;
+    flex-direction: column;
+}
+.my-dots2 li:not(:last-child){
+    margin-bottom: 20px;
+}
+.my-dots2 li:nth-child(1) button:before,
+.my-dots2 li:nth-child(2) button:before,
+.my-dots2 li:nth-child(3) button:before,
+.my-dots2 li:nth-child(4) button:before{
+    width: 20px;
+    height: 20px;
+    font-family: 'Playfair Display-Regular';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    color: rgb(0,0,0,0.3);
+}
+.my-dots2 li:nth-child(1) button:before{
+    content: '01';
+}
+.my-dots2 li:nth-child(2) button:before{
+    content: '02';
+}
+.my-dots2 li:nth-child(3) button:before{
+    content: '03';
+}
+.my-dots2 li:nth-child(4) button:before{
+    content: '04';
+}
+.my-dots2 li button{
+    color: transparent;
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+}
+.my-dots2 li button{
+    box-shadow: 0 0 0 0;
+}
+/*-------HOVER эффекты для точек слайдера-------*/
+.my-dots2 li button:hover:before{
+    font-family: 'Playfair Display-Regular';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    color: rgb(0,0,0.1);
+    cursor: pointer;
+    padding-right: 20px;
+    border-right: 3px solid black;
+}
+.my-dots2 li.slick-active button:before {
+    font-family: 'Playfair Display-Regular';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: 0.05em;
+    color: rgb(0,0,0.1);
+    cursor: pointer;
+    padding-right: 20px;
+    border-right: 3px solid black;
+    opacity: 0.75;
+}
